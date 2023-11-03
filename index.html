@@ -28,22 +28,22 @@
                     <div class=" d-flex align-items-center">
                         <img src="./assets/images/traced.png" alt="traced">
                     </div>
-                    <label for="menubar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    <input type="checkbox" id="menubar" hidden>
-                    <ul class="d-flex justify-content-center align-items-center gap-4 mobile-view">
-                        <li class="line"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white" href="#">Home</a>
+                    <div id="menubtn-icon" onclick="openNav()" class="  pe-3 pt-1 position-relative z-index-5">
+                        <div class="line1"></div>
+                        <div class="line2 my-2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <input type="checkbox" id="menubtn-icon" hidden>
+                    <ul class="d-flex justify-content-center align-items-center gap-4 mobile-view" id="navbar">
+                        <li class="border-1"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white nav-line position-relative" href="#" onclick="openNav()" >Home</a>
                         </li>
-                        <li class="line"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white" href="#">About</a>
+                        <li class="border-1"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white nav-line position-relative" href="#" onclick="openNav()" >About</a>
                         </li>
-                        <li class="line"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white"
-                                href="#">Services</a></li>
-                        <li class="line"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white"
-                                href="#">Pricing</a></li>
-                        <li class="line"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white" href="#">FAQ</a>
+                        <li class="border2"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white nav-line position-relative"
+                                href="#" onclick="openNav()" >Services</a></li>
+                        <li class="border3"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white nav-line position-relative"
+                                href="#" onclick="openNav()" >Pricing</a></li>
+                        <li class="border4"><a class="fs-16 fw-400 ff-Montserrat-Alternates text-white nav-line position-relative" href="#" onclick="openNav()" >FAQ</a>
                         </li>
                     </ul>
                     <div class="d-none d-lg-block"><a
@@ -876,6 +876,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
     <script>
         $('.slider').slick({
             dots: true,
