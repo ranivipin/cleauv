@@ -815,24 +815,12 @@ ol li {
 
 
 
-    nav ul li a {
-        position: relative;
-    }
-
-    nav ul li a::after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: -90px;
-        width: 280px;
-        height: 2px;
-
-        background-color: white;
-        transition: all 200ms linear;
-    }
-
-    nav ul li a:hover::after {
-        width:0;
+    .line {
+        text-align: center;
+        border-bottom: 1px solid white;
+        min-width:280px ;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
 }
